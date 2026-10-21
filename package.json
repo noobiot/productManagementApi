@@ -1,0 +1,35 @@
+{
+  "name": "productmanagementapi",
+  "version": "1.0.0",
+  "description": "A simple product management API built from scartch to understand the fundamental concepts fo backend engineering",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -k -n SERVER,TSC \"tsx watch src/server.ts\" \"tsc --noEmit --watch\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noobiot/productManagementApi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/noobiot/productManagementApi/issues"
+  },
+  "homepage": "https://github.com/noobiot/productManagementApi#readme",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "concurrently": "^10.0.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
